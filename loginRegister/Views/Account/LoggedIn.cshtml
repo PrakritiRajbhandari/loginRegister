@@ -1,0 +1,11 @@
+﻿@model loginRegister.Models.UserAccount
+@{
+    ViewBag.Title = "LoggedIn";
+}
+
+@if (Session["UserId"] != null)
+{
+  <h4>Hello @Session ["Username"].ToString()</h4>  
+}
+
+
